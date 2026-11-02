@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 7</title>
+</head>
+<body>
+    <script>
+        // Kysytään noppien määrä
+        const noppienMaara = parseInt(prompt("Syötä noppien määrä:"));
+        let summa = 0;
+
+        // Heitetään noppaa for-silmukassa niin monta kertaa kuin pyydettiin
+        for (let i = 0; i < noppienMaara; i++) {
+            const heitto = Math.floor(Math.random() * 6) + 1;
+            summa += heitto;
+        }
+
+        // Tulostetaan silmälukujen kokonaissumma sivulle
+        document.body.innerHTML += `<p>Noppien silmälukujen summa on: ${summa}</p>`;
+    </script>
+</body>
+</html>

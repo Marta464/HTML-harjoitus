@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 4</title>
+</head>
+<body>
+    <script>
+        // Kysytään opiskelijan nimi
+        const nimi = prompt("Syötä nimesi lajitteluhattua varten:");
+        
+        // Arvotaan numero väliltä 1-4
+        const arpa = Math.floor(Math.random() * 4) + 1;
+        let tupa = "";
+
+        // Valitaan tupa arvotun numeron perusteella simple if-else rakenteella
+        if (arpa === 1) {
+            tupa = "Gryffindor";
+        } else if (arpa === 2) {
+            tupa = "Slytherin";
+        } else if (arpa === 3) {
+            tupa = "Hufflepuff";
+        } else {
+            tupa = "Ravenclaw";
+        }
+
+        // Tulostetaan tulos sivulle
+        document.body.innerHTML += `<p>${nimi}, you are ${tupa}.</p>`;
+    </script>
+</body>
+</html>
