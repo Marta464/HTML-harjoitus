@@ -1,16 +1,18 @@
 # JavaScript Web Development Assignments
 
-This repository contains school assignments for JavaScript Modules 1, 2.
+This repository contains school assignments for JavaScript Modules 1, 2, and 3.
 
-## 📅 JS Modules 1 & 2: Interactive Programs and Control Structures
+---
 
-* **Tehtävä 1:** Console Output — A program that logs a test string directly to the browser console.
-* **Tehtävä 2:** User Greeting — Prompts for the user's name and prints a personalized greeting to the HTML page.
-* **Tehtävä 3:** Number Calculations — Prompts for three integers, converts them, and calculates their sum, product, and average.
-* **Tehtävä 4:** Hogwarts Sorting Hat — Takes a student's name and uses a random selection structure to assign them to one of the four houses.
-* **Tehtävä 5:** Leap Year Checker — Asks for a year and determines if it is a leap year based on division rules.
-* **Tehtävä 6:** Square Root Calculator — Uses a confirmation window to safely calculate and display the square root of a positive number.
-* **Tehtävä 7:** Dice Roller — Rolls a user-defined number of dice in a loop and prints the total sum of the results.
-* **Tehtävä 8:** Leap Year Interval — Prompts for a start and end year, then prints all leap years within that interval in an unordered HTML list.
-* **Tehtävä 9:** Prime Number Checker — Asks for an integer and uses a loop structure to determine if the number is prime.
-* **Tehtävä 10:** Dice Probability Simulator — Simulates 10,000 dice rolls in a nested loop to calculate the statistical probability of getting a specific sum.
+## JS Modules 1 & 2: Interactive Programs and Control Structures
+
+* Tehtävä 1: Console Output - A program that logs a test string directly to the browser console.
+* Tehtävä 2: User Greeting - Prompts for the user's name and prints a personalized greeting to the HTML page.
+* Tehtävä 3: Number Calculations - Prompts for three integers, converts them, and calculates their sum, product, and average.
+* Tehtävä 4: Hogwarts Sorting Hat - Takes a student's name and uses a random selection structure to assign them to one of the four houses.
+* Tehtävä 5: Leap Year Checker - Asks for a year and determines if it is a leap year based on division rules.
+* Tehtävä 6: Square Root Calculator - Uses a confirmation window to safely calculate and display the square root of a positive number.
+* Tehtävä 7: Dice Roller - Rolls a user-defined number of dice in a loop and prints the total sum of the results.
+* Tehtävä 8: Leap Year Interval - Prompts for a start and end year, then prints all leap years within that interval in an unordered HTML list.
+* Tehtävä 9: Prime Number Checker - Asks for an integer and uses a loop structure to determine if the number is prime.
+* Tehtävä 10: Dice Probability Simulator - Simulates 10,000 dice rolls in a nested loop to calculate the statistical probability of getting a specific sum.

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 3</title>
+</head>
+<body>
+    <script>
+        // Kysytään kolme kokonaislukua ja muutetaan ne numeroiksi parseInt-funktiolla
+        const luku1 = parseInt(prompt("Syötä ensimmäinen luku:"));
+        const luku2 = parseInt(prompt("Syötä toinen luku:"));
+        const luku3 = parseInt(prompt("Syötä kolmas luku:"));
+
+        // Lasketaan summa, tulo ja keskiarvo
+        const summa = luku1 + luku2 + luku3;
+        const tulo = luku1 * luku2 * luku3;
+        const keskiarvo = summa / 3;
+
+        // Tulostetaan tulokset HTML-dokumenttiin
+        document.body.innerHTML += `<p>Lukujen summa: ${summa}</p>`;
+        document.body.innerHTML += `<p>Lukujen tulo: ${tulo}</p>`;
+        document.body.innerHTML += `<p>Lukujen keskiarvo: ${keskiarvo}</p>`;
+    </script>
+</body>
+</html>

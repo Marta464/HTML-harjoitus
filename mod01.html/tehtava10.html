@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 10</title>
+</head>
+<body>
+    <script>
+        // Kysytään noppien määrä ja haluttu silmälukujen summa
+        const noppia = parseInt(prompt("Syötä noppien määrä:"));
+        const haluttuSumma = parseInt(prompt("Syötä haluttu silmälukujen summa:"));
+
+        const toistot = 10000; // Kuinka monta kertaa simulaatio ajetaan
+        let osumat = 0; // Laskuri sille, kuinka monta kertaa saatiin haluttu summa
+
+        // Simulaation pääsilmukka
+        for (let i = 0; i < toistot; i++) {
+            let nykyinenSumma = 0;
+
+            // Heitetään määritelty määrä noppia yhden simulaatiokierroksen aikana
+            for (let j = 0; j < noppia; j++) {
+                const heitto = Math.floor(Math.random() * 6) + 1;
+                nykyinenSumma += heitto;
+            }
+
+            // Jos tämän kierroksen noppien summa täsmää, kasvatetaan osumia
+            if (nykyinenSumma === haluttuSumma) {
+                osumat++;
+            }
+        }
+
+        // Lasketaan todennäköisyys prosentteina
+        const todennakoisyys = (osumat / toistot) * 100;
+
+        // Tulostetaan lopputulos täsmälleen tehtävänannon mukaisessa muodossa
+        document.body.innerHTML += `<p>Probability to get sum ${haluttuSumma} with ${noppia} dice is ${todennakoisyys.toFixed(2)}%</p>`;
+    </script>
+</body>
+</html>

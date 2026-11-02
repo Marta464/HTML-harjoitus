@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 8</title>
+</head>
+<body>
+    <script>
+        // Kysytään alku- ja loppuvuosi
+        const alkuVuosi = parseInt(prompt("Syötä alkuvuosi:"));
+        const loppuVuosi = parseInt(prompt("Syötä loppuvuosi:"));
+
+        // Aloitetaan järjestämätön lista HTML-muodossa
+        document.body.innerHTML += "<ul>";
+
+        // Käydään läpi kaikki vuodet annetulta väliltä
+        for (let vuosi = alkuVuosi; vuosi <= loppuVuosi; vuosi++) {
+            // Jos vuosi täyttää karkausvuoden ehdot, lisätään se listaan
+            if ((vuosi % 4 === 0 && vuosi % 100 !== 0) || (vuosi % 400 === 0)) {
+                document.body.innerHTML += `<li>${vuosi}</li>`;
+            }
+        }
+
+        // Suljetaan järjestämätön lista
+        document.body.innerHTML += "</ul>";
+    </script>
+</body>
+</html>

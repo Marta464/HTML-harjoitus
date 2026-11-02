@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 5</title>
+</head>
+<body>
+    <script>
+        // Kysytään vuosiluku
+        const vuosi = parseInt(prompt("Syötä vuosiluku:"));
+
+        // Tarkistetaan karkausvuosiehto simppeleillä säännöillä
+        if ((vuosi % 4 === 0 && vuosi % 100 !== 0) || (vuosi % 400 === 0)) {
+            document.body.innerHTML += `<p>Vuosi ${vuosi} on karkausvuosi.</p>`;
+        } else {
+            document.body.innerHTML += `<p>Vuosi ${vuosi} ei ole karkausvuosi.</p>`;
+        }
+    </script>
+</body>
+</html>

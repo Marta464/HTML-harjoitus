@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tehtävä 9</title>
+</head>
+<body>
+    <script>
+        // Kysytään käyttäjältä kokonaisluku
+        const luku = parseInt(prompt("Syötä kokonaisluku:"));
+
+        // Alkuluvun tarkistus (luvun pitää olla suurempi kuin 1)
+        if (luku <= 1) {
+            document.body.innerHTML += `<p>Luku ${luku} ei ole alkuluku.</p>`;
+        } else {
+            let onAlkuluku = true;
+
+            // Kokeillaan jakaa luku kaikilla numeroilla kakkosesta alkaen
+            for (let i = 2; i < luku; i++) {
+                if (luku % i === 0) {
+                    onAlkuluku = false; // Luku jakautui tasan, eli se ei ole alkuluku
+                    break;
+                }
+            }
+
+            if (onAlkuluku === true) {
+                document.body.innerHTML += `<p>Luku ${luku} on alkuluku.</p>`;
+            } else {
+                document.body.innerHTML += `<p>Luku ${luku} ei ole alkuluku.</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
