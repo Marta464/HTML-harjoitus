@@ -2,12 +2,22 @@
 <html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Tehtävä 1</title>
+    <title>JS Moduuli 3</title>
 </head>
 <body>
-    <script>
-        // Tulostetaan teksti konsoliin
-        console.log("I'm printing to console!");
-    </script>
+    <script src="tehtava01.js"></script>
 </body>
 </html>
+
+let numbers = [];
+
+for (let i = 0; i < 5; i++) {
+    let input = Number(prompt(`Anna luku ${i + 1} / 5:`));
+    numbers.push(input);
+}
+
+console.log("Numerot käänteisessä järjestyksessä:");
+
+for (let i = numbers.length - 1; i >= 0; i--) {
+    console.log(numbers[i]);
+}
